@@ -3,7 +3,7 @@ import Footer from './Footer/Footer'
 
 const api = {
 	key: "8b050940c48d1196c8494feb45630faa",
-	base: "http://api.openweathermap.org/data/2.5/"
+	base: "https://api.openweathermap.org/data/2.5/"
 }
 
 function App() {
@@ -12,13 +12,11 @@ function App() {
 
 	const search = e => {
 		if(e.charCode === 13) {
-			// console.log("ENTER")
 			fetch(`${api.base}weather?q=${query}&units=metric&APPID=${api.key}`)
 			.then(res => res.json())
 			.then(result => {
 				setWeather(result)
 				setQuery('')
-				console.log(result)
 			});
 		}
 	}
@@ -58,7 +56,7 @@ function App() {
 					</div>
 					<div className="weather">{weather.weather[0].main}</div>
 				</div>
-			</div> ) : ('')}
+			</div> ) : ("")}
 			<Footer />
 		</main>
 	</div>
