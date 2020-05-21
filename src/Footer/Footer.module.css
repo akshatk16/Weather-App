@@ -1,0 +1,27 @@
+.container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	padding: 0px;
+	background-color: none;
+	color: whitesmoke;
+	position: fixed;
+	bottom: 0px;
+	left:0px;
+
+}
+
+.github {
+	margin-left: 5px;
+	text-decoration: none;
+	color: whitesmoke;
+}
+.github:hover {
+	text-decoration: underline;
+
+}
+@media only screen and (max-width: 770px) {
+  .container {
+	font-size: 10px;
+	}
+}

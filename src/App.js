@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import Footer from './Footer/Footer'
 
 const api = {
 	key: "8b050940c48d1196c8494feb45630faa",
@@ -57,6 +58,7 @@ function App() {
 					<div className="weather">{weather.weather[0].main}</div>
 				</div>
 			</div> ) : ('')}
+			<Footer />
 		</main>
 	</div>
 	);
