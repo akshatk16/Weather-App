@@ -23,10 +23,20 @@ body {
 .App.warm {
 	background-image: url("./images/warm-bg.jpg");
 }
-
 .App.cold {
 	background-image: url("./images/cold-bg.jpg");
 }
+
+@media (min-width: 650px ) {
+	.App.warm {
+		background-image: linear-gradient(to top, rgba(100,0,0,0.5), rgba(0,0,100,0.5));
+	}
+	.App.cold {
+		background-image: linear-gradient(to top, rgba(0,0,100,0.5), rgba(100,0,0,0.5));
+	}
+}
+
+
 
 main {
 	min-height: 100vh;
