@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import Footer from './Footer/Footer'
 
+
 const api = {
-	key: "8b050940c48d1196c8494feb45630faa",
+	key: process.env.REACT_APP_API_KEY,
 	base: "https://api.openweathermap.org/data/2.5/"
 }
 
